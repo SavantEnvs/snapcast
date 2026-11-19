@@ -1,0 +1,10 @@
+
+{
+    "canControl": true,
+    "canGoNext": true,
+    "canGoPrevious": true,
+    "canPause": true,
+    "canPlay": true,
+    "canSeek": true,
+    "volume": 42
+}

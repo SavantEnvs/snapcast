@@ -1,0 +1,15 @@
+
+{
+    "canControl": false,
+    "canGoNext": false,
+    "canGoPrevious": false,
+    "canPause": false,
+    "canPlay": false,
+    "canSeek": false,
+    "playbackStatus": "playing",
+    "loopStatus": "track",
+    "shuffle": false,
+    "volume": 42,
+    "mute": false,
+    "position": 23.0
+}

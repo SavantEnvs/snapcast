@@ -1,0 +1,1 @@
+.[{"id": 1, "jsonrpc": "2.0", "method": "Stream.Control", "params": {"id": "Spotify", "command": "seek", "param": "60"}},{"id":"8","jsonrpc":"2.0","method":"Client.SetVolume","params":{"id":"00:21:6a:7d:74:fc","volume":{"muted":false,"percent":74}}},{"id":1,"jsonrpc":"2.0","method":"Server.GetStatus"}]

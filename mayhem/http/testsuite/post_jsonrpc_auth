@@ -1,0 +1,5 @@
+POST /jsonrpc HTTP/1.1
+Content-Length: 2
+Authorization: Basic YWRtaW46eA==
+
+{}

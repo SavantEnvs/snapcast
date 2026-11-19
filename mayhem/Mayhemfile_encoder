@@ -1,0 +1,9 @@
+project: savantenvs/snapcast
+target: encoder
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/encoder/testsuite
+cmds:
+  - cmd: /mayhem/build/fuzz/fuzz_encoder
+    libfuzzer: true
+    timeout: 10

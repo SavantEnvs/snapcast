@@ -1,0 +1,1 @@
+process:///usr/bin/mpv?name=Process&params=--no-terminal%20--audio-display=no&log_stderr=false

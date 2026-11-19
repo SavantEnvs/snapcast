@@ -1,0 +1,1 @@
+pipe:///tmp/snapfifo?name=default&sampleformat=48000:16:2&codec=flac

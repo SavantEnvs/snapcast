@@ -1,0 +1,9 @@
+project: savantenvs/snapcast
+target: opus-decoder
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/opus-decoder/testsuite
+cmds:
+  - cmd: /mayhem/build/fuzz/fuzz_opus_decoder
+    libfuzzer: true
+    timeout: 10

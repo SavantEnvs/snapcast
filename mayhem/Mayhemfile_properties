@@ -1,0 +1,9 @@
+project: savantenvs/snapcast
+target: properties
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/properties/testsuite
+cmds:
+  - cmd: /mayhem/build/fuzz/fuzz_properties
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,9 @@
+project: savantenvs/snapcast
+target: pcm-decoder
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pcm-decoder/testsuite
+cmds:
+  - cmd: /mayhem/build/fuzz/fuzz_pcm_decoder
+    libfuzzer: true
+    timeout: 10

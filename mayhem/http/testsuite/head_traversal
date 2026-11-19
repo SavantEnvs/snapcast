@@ -1,0 +1,5 @@
+HEAD /../etc/passwd HTTP/1.1
+
+HEAD /index.html HTTP/1.1
+Connection: close
+

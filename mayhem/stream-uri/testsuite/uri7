@@ -1,0 +1,1 @@
+alsa:///?name=alsa&device=hw:0,0&send_silence=false&idle_threshold=100

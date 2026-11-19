@@ -1,0 +1,9 @@
+project: savantenvs/snapcast
+target: stream-uri
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/stream-uri/testsuite
+cmds:
+  - cmd: /mayhem/build/fuzz/fuzz_stream_uri
+    libfuzzer: true
+    timeout: 10

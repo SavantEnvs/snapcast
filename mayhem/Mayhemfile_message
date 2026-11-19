@@ -1,0 +1,13 @@
+project: savantenvs/snapcast
+target: message
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/message/testsuite
+# -malloc_limit_mb=64: BaseMessage::readVal (common/message/message.hpp) sizes its buffer from the
+# uint32 length inside the payload, before checking what is left of the (<= 1 MB) message, so one
+# 30-byte message asks for up to 4 GB. A limit far above any legitimate allocation reports that bug
+# at once as an OOM, instead of first touching gigabytes on every such input.
+cmds:
+  - cmd: /mayhem/build/fuzz/fuzz_message -malloc_limit_mb=64
+    libfuzzer: true
+    timeout: 10
